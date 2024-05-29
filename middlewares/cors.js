@@ -1,4 +1,8 @@
-const allowedCors = ["http://localhost:3001", "http://localhost:3000"];
+const allowedCors = [
+  "http://localhost:3001",
+  "http://localhost:3000",
+  //"*",
+];
 
 function cors(req, res, next) {
   const { origin } = req.headers;
